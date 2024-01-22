@@ -7,7 +7,7 @@ import {
   ContactDiscriptionBox,
   ContactAsset,
   ContactAssetBox,
-  VolkerMunk,
+  VolkerMunko,
   ContactIconContainer,
   ContactIcon,
 } from "./ContactStyled";
@@ -38,7 +38,7 @@ export function Contact() {
                   <ContactAsset />
                   CONTACT
                 </ContactAssetBox>
-                <VolkerMunk>Volker Munko</VolkerMunk>
+                <VolkerMunko>Volker Munko</VolkerMunko>
                 <ContactIconContainer>
                   <ContactIcon src={location} />
                   Office for Allfinanz German investment advice On the heath 8

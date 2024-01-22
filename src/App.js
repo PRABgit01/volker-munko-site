@@ -15,13 +15,12 @@ function App() {
     <div className="App">
       <GlobalStyles />
       <AssetManagment />
-      <AssetManagementHomePage />
-      <Competence />
-      <ProductAndSolution />
-      <WealthManagment/>
-      <Advantagespage />
-      <Contact />
-      <FooterPage />
+      {/* <AssetManagementHomePage /> */}
+      {/* <Competence /> */}
+      {/* <ProductAndSolution /> */}
+      {/* <Advantagespage /> */}
+      {/* <Contact /> */}
+      {/* <FooterPage /> */}
     </div>
   );
 }

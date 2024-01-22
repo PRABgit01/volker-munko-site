@@ -8,9 +8,12 @@ import {
   AssetManagmentSection,
   AssetManagmentWrapper,
   ContactButton,
+  MobileNavigation,
+  NAvigationBox,
   WhyAssetManagmentContainer,
 } from "./AssetManagment.styled";
 import VMLogo from "../asserts/VM LOGO.png";
+import Navigation from "../asserts/VM LOGO.png";
 
 export function AssetManagment() {
   return (
@@ -22,14 +25,16 @@ export function AssetManagment() {
               <AssetManagmentImageContainer>
                 <AssetManagmentImage src={VMLogo} />
               </AssetManagmentImageContainer>
-              <WhyAssetManagmentContainer>
-                Why asset management
-              </WhyAssetManagmentContainer>
-
-              <AboutUsBox>About Us</AboutUsBox>
-              <ContactButton>
-                <AssetManagmentContact>contact</AssetManagmentContact>
-              </ContactButton>
+              <NAvigationBox>
+                <WhyAssetManagmentContainer>
+                  Why asset management
+                </WhyAssetManagmentContainer>
+                <AboutUsBox>About Us</AboutUsBox>
+                <ContactButton>
+                  <AssetManagmentContact>contact</AssetManagmentContact>
+                </ContactButton>
+                <MobileNavigation src="https://cdn.zeplin.io/5fedbd677b1a145df349f5a4/assets/a22a9827-da86-48f7-8526-38cf0d7e4c92.svg" />
+              </NAvigationBox>
             </AssetManagmentHeader>
           </AssetManagmentWrapper>
         </AssetManagmentContainer>

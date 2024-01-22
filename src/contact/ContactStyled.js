@@ -59,14 +59,14 @@ export const ContactAssetBox = styled.div`
 `;
 
 export const ContactAsset = styled.div`
-  width:100%;
+  width: 100%;
   max-width: 22px;
   height: 0;
   margin: 8px 14px 0 0;
   border: solid 1px #4d4d4e;
 `;
 
-export const VolkerMunk = styled.div`
+export const VolkerMunko = styled.div`
   width: 100%;
   max-width: 228px;
   height: 20px;
@@ -92,7 +92,7 @@ export const ContactIconContainer = styled.div`
 `;
 
 export const ContactIcon = styled.img`
-  width:100%;
+  width: 100%;
   max-width: 40px;
   height: 40px;
 `;

@@ -14,7 +14,7 @@ export const AdvantagePageContainer = styled.div`
 
 export const AdvantagePageWrapper = styled.div`
   margin: 0 19px 20px;
-  padding: 33px 120px 0px 118px;
+  padding: 33px 120px 0 118px;
 `;
 
 export const AdvantagePageCardInnerWrapper = styled.div`
@@ -38,7 +38,6 @@ export const AdvantagePageInnerBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
 `;
 
 export const LeftInnerbox = styled.div`
@@ -57,11 +56,11 @@ export const AdvantagePageImage = styled.img`
 `;
 
 export const RightInnerboxHeading = styled.div`
-  width:100%;
+  width: 100%;
   max-width: 547px;
   height: 138px;
   padding: 1px 16px 46px 20px;
-  font-family: Quicksand;
+  font-family: "Quicksand";
   font-size: 35px;
   font-weight: bold;
   font-stretch: normal;
@@ -72,9 +71,9 @@ export const RightInnerboxHeading = styled.div`
   color: #14183e;
 `;
 
-export const RightInnerboxDiscription=styled.div`
+export const RightInnerboxDiscription = styled.div`
   width: 100%;
   max-width: 500px;
   height: 200px;
   background-color: #fff;
-`
+`;

@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
 body{
   margin: 0;
   padding: 0;
-  background: #F9F9F9;
+  ${'' /* background: #F9F9F9; */}
 }
   @font-face {
     font-family: 'Nunito-Black';
