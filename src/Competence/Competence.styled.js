@@ -56,8 +56,7 @@ export const CompetenceTitle = styled.div`
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.55;
-  letter-spacing: -0.51px;
+  line-height: 34px;
   text-align: left;
   color: #14183e;
   z-index: 2;
@@ -112,7 +111,7 @@ export const ExcelenceAdviceTitle = styled.p`
   font-size: 20px;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.52;
+  line-height: 34px;
   text-align: left;
   color: #14183e;
 `;
@@ -159,7 +158,7 @@ export const ProductRightBox = styled.div`
 export const VerticalLine = styled.div`
   width: 0;
   height: 141px;
-  margin: 2.5px 16px 48.5px;
+  margin: 2px 16px 48px;
   border: solid 1px #cfcfcf;
 `;
 

@@ -77,7 +77,7 @@ export const VolkerMunk = styled.div`
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 3px;
+  line-height: 34px;
   letter-spacing: 3px;
   text-align: left;
   color: #14183e;

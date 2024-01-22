@@ -14,7 +14,6 @@ import {
   ButtonText,
 } from "./AsstetmanagmentHomePage.styled";
 import assetHomeimage from "../asserts/group-10811.png";
-import { ContactButton } from "../assetmanagment/AssetManagment.styled";
 
 export function AssetManagementHomePage() {
   return (

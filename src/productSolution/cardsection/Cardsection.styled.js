@@ -24,7 +24,7 @@ export const CardContainer = styled.li`
       transform: rotatex(360deg);
       transition: transform 1s ease;
     }
-    
+
     & > * {
       pointer-events: none;
       opacity: 0;

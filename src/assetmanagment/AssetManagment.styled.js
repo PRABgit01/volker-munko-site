@@ -47,18 +47,18 @@ export const AssetManagmentImage = styled.img`
 `;
 
 export const WhyAssetManagmentContainer = styled.div`
-  width: 100%;
-  max-width: 217px;
-  height: 27px;
-  margin: 23px 1px 19px 2px;
-  font-family: "Nunito-SemiBold";
-  font-size: 18px;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 4px;
-  letter-spacing: 2px;
-  text-align: left;
-  color: #37415c;
+      width: 100%;
+    max-width: 431px;
+    height: 27px;
+    margin: 23px 1px 19px 2px;
+    font-family: "Nunito-SemiBold";
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 12px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #37415c;
 
   @media (max-width: 991px) {
     display: none;
@@ -69,7 +69,7 @@ export const AboutUsBox = styled.div`
   width:100%;
   max-width: 110px;
   height: 27px;
-  margin: 23.7px 6px 28.5px 22px;
+  margin: 23px 6px 28px 22px;
   font-family: "Nunito-SemiBold";
   font-size: 20px;
   font-stretch: normal;

@@ -1,6 +1,5 @@
 import {
   LeftDiscriptionBox,
-  RightDiscriptionImage,
   WealthManagmentContainer,
   WealthManagmentInnerWrapper,
   WealthManagmentLine,

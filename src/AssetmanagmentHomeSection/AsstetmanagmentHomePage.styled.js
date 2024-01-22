@@ -35,7 +35,7 @@ export const HomePageGradient = styled.div`
   max-width: 427px;
   height: 68px;
   position: relative;
-  top: -84px;
+  top: -113px;
   z-index: 0;
   background-image: linear-gradient(to bottom, #f8e9ed, #fbfbfb);
 
@@ -83,7 +83,7 @@ export const AssetManagmentBox = styled.div`
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 4px;
+  line-height: 35px;
   text-align: right;
   color: #14183e;
   z-index: 1;
@@ -102,7 +102,6 @@ export const HomePageDiscription = styled.p`
   font-stretch: normal;
   font-style: normal;
   line-height: 18px;
-  letter-spacing: -0.18px;
   text-align: left;
   color: #37415c;
 `;
@@ -126,7 +125,6 @@ export const ButtonText = styled.p`
   font-size: 18px;
   font-stretch: normal;
   font-style: normal;
-  letter-spacing: -0.18px;
   color: #fff;
   text-shadow: 4px 4px 20px #fff;
 `;

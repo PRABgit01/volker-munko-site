@@ -19,25 +19,38 @@ export const WealthManagmentContainer = styled.div`
 export const WealthManagmentWrapper = styled.div`
   margin: 0 19px 20px;
   padding: 33px 0px 0px 118px;
+
+  position: relative;
+
+  ::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    max-width: 20px;
+    height: 100%;
+    max-height: 20px;
+    background-image: url(https://cdn.zeplin.io/5fedbd677b1a145df349f5a4/assets/5e6026ea-fe52-4990-a864-6c168d1e561a.png);
+    background-size: cover;
+  }
 `;
 
 export const WealthManagmentInnerWrapper = styled.div`
   display: flex;
   width: 100%;
-  max-width: 50%;
+  max-width: 821px;
   height: 1000px;
   margin: 100px 21px 61px 0;
   font-size: 41px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 4px;
+  line-height: 34px;
   text-align: left;
   color: #fff;
 `;
 
 export const LeftDiscriptionBox = styled.div`
-width: 100%;
+  width: 100%;
   max-width: 400px;
 `;
 
@@ -65,7 +78,6 @@ export const WealthManagmentIcon = styled.img`
 export const WealthManagmentRightDiscription = styled.div`
   margin: 20px 0px 0px 0px;
   width: 100%;
-  max-width: 50%;
 `;
 
 export const RightDiscriptionImage = styled.img`
