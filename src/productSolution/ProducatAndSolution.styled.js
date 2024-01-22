@@ -48,8 +48,7 @@ export const ProductSolutionHeading = styled.p`
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.55;
-  letter-spacing: -0.51px;
+  line-height: 34px;
   text-align: center;
   color: #14183e;
 `;

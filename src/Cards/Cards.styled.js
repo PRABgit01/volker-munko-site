@@ -56,7 +56,7 @@ export const Discriptionstyled = styled.p`
   height: 13px;
   font-size: 16px;
   font-style: normal;
-  line-height: 3cqb;
+  line-height: 13px;
   text-align: left;
   color: #37415c;
   padding: 0px 0px 0px 25px;
