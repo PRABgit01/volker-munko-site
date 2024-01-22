@@ -19,15 +19,17 @@ export const CompetenceWrapper = styled.div`
 
   @media (max-width: 991px) {
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
   }
 `;
 
 export const CompetenceInnerWrapper = styled.div`
   display: flex;
+  gap: 70px;
 
   @media (max-width: 991px) {
-   flex-direction: column;
+    flex-direction: column;
+    gap: 0;
   }
 `;
 
@@ -37,69 +39,89 @@ export const CompetenceLeftBox = styled.div`
 
   @media (max-width: 991px) {
     max-width: none;
-  
   }
 `;
 
 export const CompetenceRightBox = styled.div`
   width: 100%;
   max-width: 50%;
+
+  @media (max-width: 991px) {
+   max-width: 262px; 
+  }
 `;
 
 export const CompetenceTitle = styled.div`
-  width:100%;
-  max-width: 200px;
-  height: 143px;
-  margin: 1px 0 0;
+  width: 100%;
+  max-width: 406px;
+  margin: 3px 0px 52px 0px;
   font-family: "Nunito-bold";
-  font-size: 28px;
+  font-size: 46px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 34px;
+  line-height: 57px;
   text-align: left;
   color: #14183e;
   z-index: 2;
-`;
-
-export const CompetenceTitleGradient = styled.div`
   position: relative;
-  width:100%;
-  max-width: 377px;
-  height: 72px;
-  top: -45px;
-  margin: 0 27px 72px 0;
-  object-fit: contain;
-  z-index: -1;
-  background-image: linear-gradient(to bottom, #f8e9ed, #fbfbfb);
+
+  @media (max-width: 991px) {
+    max-width: 256px;
+    line-height: 34px;
+    font-size: 30px;
+    margin: 3px 0px 14px 0px;
+  }
+
+  ::before {
+    position: absolute;
+    width: 100%;
+    max-width: 377px;
+    height: 72px;
+    object-fit: contain;
+    z-index: -1;
+    background-image: linear-gradient(to bottom, #f8e9ed, #fbfbfb);
+  }
 `;
 
 export const CompetenceDisccription = styled.p`
   color: #37415c;
   width: 100%;
-  max-width: 350px;
+  max-width: 500px;
   font-family: "Nunito-Regular";
+  line-height: 28px;
+
+  @media (max-width: 991px) {
+   line-height: 17px;
+    font-size: 12px; 
+  }
 `;
 
 export const CompetenceButton = styled.button`
   width: 100%;
-  max-width: 207px;
+  max-width: 200px;
   height: 60px;
   border-radius: 10px;
   border: none;
   background-color: #e6e6e6;
+  margin: 32px 0px;
 `;
 
 export const CompetenceButtonText = styled.p`
   color: #14183e;
   text-shadow: 4px 4px 20px #ffff;
+  font-size: 17px;
+  font-family: "Nunito-Bold";
 `;
 
 export const ExelenceAdviceComponent = styled.div`
   width: 100%;
   max-width: 49px;
   height: 0;
-  border: solid 2px #3b3b3c;
+  border: solid 1px #3b3b3c;
+
+  @media (max-width: 991px) {
+    max-width: 15px;
+    border: solid 1px #3b3b3c;
+  }
 `;
 
 export const ExcelenceAdviceTitle = styled.p`
@@ -108,35 +130,46 @@ export const ExcelenceAdviceTitle = styled.p`
   height: 36px;
   margin: 2px 0px 0px 0px;
   font-family: "Nunito-bold";
-  font-size: 20px;
+  font-size: 24px;
   font-stretch: normal;
   font-style: normal;
   line-height: 34px;
   text-align: left;
   color: #14183e;
+
+  @media (max-width: 991px) {
+    font-size: 14px;
+  }
 `;
 
 export const ExelenceTitileBox = styled.div`
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 20px;
+
+  @media (max-width: 991px) {
+    gap: 15px;
+  }
 `;
 
 export const ServiceBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  max-width: 248px;
-  height: 196px;
-  margin: 60px 145px 0px 82px;
-  padding: 23px 47px 99px 59px;
+  max-width: 400px;
+  height: 328px;
   border-radius: 23px;
-  border: solid 2px #cfcfcf;
+  border: solid 1px #cfcfcf;
   background-color: #fff;
+  margin: 42px 0px 0px 0px;
 
-  @media (max-width:991px) {
+  @media (max-width: 991px) {
     margin: 0;
-    padding: 17px 27px 74px 25px
+    padding: 0px 29px 0px 26px;
+    height: 262px;
   }
 `;
 
@@ -158,10 +191,18 @@ export const ProductRightBox = styled.div`
 export const VerticalLine = styled.div`
   width: 0;
   height: 141px;
-  margin: 2px 16px 48px;
-  border: solid 1px #cfcfcf;
+  margin: 1px 44px 48px;
+  border: solid 0.5px #cfcfcf;
+
+  @media (max-width:991px) {
+    margin: 1px 40px 15px 
+  }
 `;
 
 export const ProductDiscription = styled.div`
+  width: 100%;
+  max-width: 323px;
+  text-align: center;
+  font-size: 15px;
   color: #707684;
 `;

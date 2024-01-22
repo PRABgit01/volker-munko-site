@@ -22,7 +22,6 @@ export function AssetManagementHomePage() {
         <AssetManagmentHomePageContainer>
           <HomePageWrapper>
             <HomePageInnerWrapper>
-              <HomePageBox></HomePageBox>
               <RightBox>
                 <AssetManagmentBox>Asset management</AssetManagmentBox>
                 <HomePageGradient />
@@ -35,11 +34,11 @@ export function AssetManagementHomePage() {
                 <ContactButtonContainer>
                   <ButtonText>Contact Us</ButtonText>
                 </ContactButtonContainer>
-                </RightBox>
-                <LeftBox>
-                <LeftBoxImage src={assetHomeimage} />
-              </LeftBox>
+              </RightBox>
             </HomePageInnerWrapper>
+            {/* <LeftBox>
+                <LeftBoxImage src={assetHomeimage} />
+              </LeftBox> */}
           </HomePageWrapper>
         </AssetManagmentHomePageContainer>
       </AssetManagmentHomePageSection>

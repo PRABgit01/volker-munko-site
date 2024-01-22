@@ -32,10 +32,7 @@ export function Competence() {
           <CompetenceWrapper>
             <CompetenceInnerWrapper>
               <CompetenceLeftBox>
-                <CompetenceTitle>
-                  Competence for your finances
-                  <CompetenceTitleGradient />
-                </CompetenceTitle>
+                <CompetenceTitle>Competence for your finances</CompetenceTitle>
                 <CompetenceDisccription>
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
@@ -44,7 +41,7 @@ export function Competence() {
                   here, content here', making it look like readable English
                 </CompetenceDisccription>
                 <CompetenceButton>
-                  <CompetenceButtonText>contact</CompetenceButtonText>
+                  <CompetenceButtonText>Contact</CompetenceButtonText>
                 </CompetenceButton>
               </CompetenceLeftBox>
               <CompetenceRightBox>

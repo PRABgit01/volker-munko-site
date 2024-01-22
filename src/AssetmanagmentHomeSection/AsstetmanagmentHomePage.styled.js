@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import assetHomeimage from "../asserts/group-10811.png";
+
 
 export const AssetManagmentHomePageSection = styled.section``;
 
@@ -11,12 +13,12 @@ export const AssetManagmentHomePageContainer = styled.div`
   @media (max-width: 991px) {
     max-width: max-content;
   }
+
 `;
 
 export const HomePageWrapper = styled.div`
   width: 100%;
   max-width: 1328px;
-
 `;
 
 export const HomePageInnerWrapper = styled.div`
@@ -28,6 +30,9 @@ export const HomePageInnerWrapper = styled.div`
   @media (max-width: 991px) {
     flex-direction: column;
   }
+
+
+
 `;
 
 export const HomePageGradient = styled.div`
@@ -55,11 +60,13 @@ export const LeftBox = styled.div`
 
 export const RightBox = styled.div`
   width: 100%;
-  max-width: 40%;
+  max-width: 1000px;
 
   @media (max-width: 991px) {
     max-width: 100%;
   }
+
+ 
 `;
 
 export const LeftBoxImage = styled.img`
@@ -75,15 +82,12 @@ export const LeftBoxImage = styled.img`
 `;
 
 export const AssetManagmentBox = styled.div`
-  width:100%;
+  width: 100%;
   max-width: 20px;
   height: 149px;
   font-family: "Nunito-Regular";
   font-size: 46px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 35px;
   text-align: right;
   color: #14183e;
   z-index: 1;

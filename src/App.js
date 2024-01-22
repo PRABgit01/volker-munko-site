@@ -16,7 +16,7 @@ function App() {
       <GlobalStyles />
       <AssetManagment />
       {/* <AssetManagementHomePage /> */}
-      {/* <Competence /> */}
+      <Competence />
       {/* <ProductAndSolution /> */}
       {/* <Advantagespage /> */}
       {/* <Contact /> */}
