@@ -25,11 +25,11 @@ export const ProductAndSolutionWrapper = styled.div`
 export const ProducatAndSolutionInnerWrapper = styled.div`
   background-image: url(https://cdn.zeplin.io/5fedbd677b1a145df349f5a4/assets/3d6d0a6f-f719-4002-a7c4-07a720563dbe.svg);
   margin: 0 19px 20px;
-  padding: 33px 120px 0px 118px;
+  padding: 33px 120px 0 118px;
 
   @media (max-width: 991px) {
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
   }
 `;
 
@@ -43,23 +43,31 @@ export const ProductSolutionHeading = styled.p`
   width: 100%;
   max-width: 472px;
   height: 64px;
-  font-family: Quicksand, sans-serif;
+  font-family: "Quicksand-bold";
   font-size: 42px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 34px;
   text-align: center;
   color: #14183e;
+
+  @media (max-width: 991px) {
+    font-size: 20px;
+    height: 13px;
+  }
 `;
 
 export const ProductSolutionDiscription = styled.p`
   width: 100%;
   max-width: 1000px;
   height: 64px;
-  font-family: Quicksand, sans-serif;
+  font-family: "Quicksand-bold";
   text-align: center;
   color: #14183e;
+
+  @media (max-width: 991px) {
+    font-size: 15px;
+    padding: 0px 0px 27px 0px;
+  }
 `;
 
 export const ProductSolutionCustomerType = styled.div`
@@ -74,6 +82,10 @@ export const PrivateCustomerBox = styled.div`
   height: 41px;
   border-radius: 36px;
   background-color: #474748;
+
+  @media (max-width: 991px) {
+    height: 34px;
+  }
 `;
 
 export const PrivateCustomerTitle = styled.div`
@@ -88,6 +100,7 @@ export const PrivateCustomerTitle = styled.div`
 
   @media (max-width: 991px) {
     font-size: 9px;
+    padding: 6px 0px;
   }
 `;
 
@@ -104,6 +117,7 @@ export const CorporateCustomerTitle = styled.div`
   @media (max-width: 991px) {
     max-width: 331px;
     font-size: 12px;
+    height: 34px;
   }
 `;
 

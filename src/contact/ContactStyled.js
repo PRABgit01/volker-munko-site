@@ -14,7 +14,7 @@ export const ContactContainer = styled.div`
 
 export const ContactPageWrapper = styled.div`
   margin: 0 19px 20px;
-  padding: 33.3px 120px 0px 118px;
+  padding: 33px 120px 0 118px;
 
   @media (max-width: 991px) {
     margin: 0;
@@ -41,6 +41,22 @@ export const ContactMapBox = styled.div`
   }
 `;
 
+export const StyledMapIframe = styled.iframe`
+  width:100%;
+  max-width: 400px;
+  height: 450px;
+  border: 0;
+  border-radius: 22px;
+
+  @media (max-width: 991px) {
+    width:100%;
+    max-width: 300px;
+    height: 300px;
+    padding: 0 0 23px 0;
+    border-radius: 0;
+  }
+`;
+
 export const ContactDiscriptionBox = styled.div`
   width: 100%;
   max-width: 50%;
@@ -52,9 +68,24 @@ export const ContactDiscriptionBox = styled.div`
 
 export const ContactAssetBox = styled.div`
   display: flex;
+  position: relative;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 0 0 0 31px;
 
-  @media (max-width: 991) {
-    padding: 44px 0px 0px 0px;
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    max-width: 18px;
+    height: 0;
+    top: 12px;
+    left: -3px;
+    border: solid 1px #4d4d4e;
+  }
+
+  @media (max-width: 991px) {
+    padding: 0 0 3px 29px;
   }
 `;
 
@@ -62,21 +93,19 @@ export const ContactAsset = styled.div`
   width: 100%;
   max-width: 22px;
   height: 0;
-  margin: 8px 14px 0 0;
+  margin: 14px 14px 0 0;
   border: solid 1px #4d4d4e;
 `;
 
 export const VolkerMunko = styled.div`
   width: 100%;
-  max-width: 228px;
+  max-width: 258px;
   height: 20px;
   margin: 0 0 9px;
-  padding: 31px 0px 0px;
-  font-family: Quicksand;
+  padding: 31px 0 0;
+  font-family: "Quicksand-Bold";
   font-size: 31px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 34px;
   letter-spacing: 3px;
   text-align: left;
@@ -88,11 +117,11 @@ export const ContactIconContainer = styled.div`
   gap: 20px;
   width: 100%;
   max-width: 300px;
-  padding: 58px 0px 0px;
+  padding: 58px 0 0;
 `;
 
 export const ContactIcon = styled.img`
   width: 100%;
-  max-width: 40px;
-  height: 40px;
+  max-width: 50px;
+  height: 50px;
 `;

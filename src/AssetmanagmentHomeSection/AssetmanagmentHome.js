@@ -3,17 +3,14 @@ import {
   AssetManagmentHomePageContainer,
   HomePageWrapper,
   HomePageInnerWrapper,
-  LeftBox,
-  LeftBoxImage,
   RightBox,
   AssetManagmentBox,
-  HomePageBox,
   HomePageGradient,
   HomePageDiscription,
   ContactButtonContainer,
   ButtonText,
+  ContactMobileButtonContainer,
 } from "./AsstetmanagmentHomePage.styled";
-import assetHomeimage from "../asserts/group-10811.png";
 
 export function AssetManagementHomePage() {
   return (
@@ -36,10 +33,10 @@ export function AssetManagementHomePage() {
                 </ContactButtonContainer>
               </RightBox>
             </HomePageInnerWrapper>
-            {/* <LeftBox>
-                <LeftBoxImage src={assetHomeimage} />
-              </LeftBox> */}
           </HomePageWrapper>
+          <ContactMobileButtonContainer>
+            <ButtonText>Contact Us</ButtonText>
+          </ContactMobileButtonContainer>
         </AssetManagmentHomePageContainer>
       </AssetManagmentHomePageSection>
     </>

@@ -13,7 +13,6 @@ import {
   WhyAssetManagmentContainer,
 } from "./AssetManagment.styled";
 import VMLogo from "../asserts/VM LOGO.png";
-import Navigation from "../asserts/VM LOGO.png";
 
 export function AssetManagment() {
   return (

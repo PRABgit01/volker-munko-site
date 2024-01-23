@@ -9,11 +9,13 @@ import {
   Innerwrapper,
   LeftCardContainer,
   Leftsection,
+  ListData,
   Maincontainer,
   Mainsection,
   Mainwrapper,
   Rightsection,
   Shapeelips,
+  TitleGradient,
 } from "./Cards.styled.js";
 
 export function Advantagespage() {
@@ -28,24 +30,31 @@ export function Advantagespage() {
                   <Imagewrapper src="http://217.160.46.77/assets/images/advantages.png"></Imagewrapper>
                 </Rightsection>
                 <Leftsection>
+                  <TitleGradient />
                   <Headingstyled>Your advantages at a glance</Headingstyled>
                   <Discriptionstyled>
                     It is a long established fact that a reader will be
                     distracted
                   </Discriptionstyled>
-                  <Shapeelips> </Shapeelips>
                   <Contentstyled>
                     <LeftCardContainer>
                       <DataContainer>
-                        <CardIconImage>1</CardIconImage> You take center stage{" "}
+                        <CardIconImage>
+                          <ListData>1</ListData>
+                        </CardIconImage>
+                        You take center stage
                       </DataContainer>
                       <DataContainer>
-                        <CardIconImage>1</CardIconImage> Your finances: easier
-                        than ever With the
+                        <CardIconImage>
+                          <ListData>2</ListData>
+                        </CardIconImage>{" "}
+                        Your finances: easier than ever With the
                       </DataContainer>
                       <DataContainer>
-                        <CardIconImage>1</CardIconImage> best partners at your
-                        side{" "}
+                        <CardIconImage>
+                          <ListData>3</ListData>
+                        </CardIconImage>{" "}
+                        best partners at your side
                       </DataContainer>
                     </LeftCardContainer>
                   </Contentstyled>

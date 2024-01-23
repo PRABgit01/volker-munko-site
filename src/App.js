@@ -8,19 +8,20 @@ import { FooterPage } from "./Footer/FooterPage";
 import { AssetManagment } from "./assetmanagment/AssetManagment";
 import { Contact } from "./contact/contact";
 import { ProductAndSolution } from "./productSolution/ProdcuandSolution";
-import { WealthManagment } from "./wealthmanagmnet/Wealthmanagment";
+import { WealthManagement, WealthManagment } from "./wealthmanagmnet/Wealthmanagment";
 
 function App() {
   return (
     <div className="App">
       <GlobalStyles />
       <AssetManagment />
-      {/* <AssetManagementHomePage /> */}
+      <AssetManagementHomePage />
       <Competence />
-      {/* <ProductAndSolution /> */}
-      {/* <Advantagespage /> */}
-      {/* <Contact /> */}
-      {/* <FooterPage /> */}
+      <ProductAndSolution />
+      <WealthManagement/>
+      <Advantagespage />
+      <Contact />
+      <FooterPage />
     </div>
   );
 }

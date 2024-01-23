@@ -1,33 +1,63 @@
-import {
-  LeftDiscriptionBox,
-  WealthManagmentContainer,
-  WealthManagmentInnerWrapper,
-  WealthManagmentLine,
-  WealthManagmentRightDiscription,
-  WealthManagmentSection,
-  WealthManagmentWrapper,
-} from "./Wealthmangment.styled";
-import { WealthManagmentDiscriptions } from "./WealthmanagmetDiscription";
+import React from "react";
 
-export function WealthManagment() {
+import {
+  WealthSection,
+  WealthContainer,
+  WealthWrapper,
+  WealthInnerWrapper,
+  WealthLeftBox,
+  WealthLeftBoxWrapper,
+  WealthTitle,
+  WealthListBox,
+  WealthRightBox,
+  WealthRightBoxInner,
+  WealthRightBoxList,
+} from "./Wealthmangment.styled.js";
+
+import { WealthProps } from "./WealthmanagmetDiscription";
+import { WealthData, WealthDataSecond } from "./WealthData";
+
+export const WealthManagement = () => {
   return (
     <>
-      <WealthManagmentSection>
-        <WealthManagmentContainer>
-          <WealthManagmentWrapper>
-            <WealthManagmentInnerWrapper>
-              <LeftDiscriptionBox>
-                Wealth management consulting with a seal of approval in Vlotho
-                <WealthManagmentLine />
-                <WealthManagmentDiscriptions />
-              </LeftDiscriptionBox>
-              <WealthManagmentRightDiscription>
-                <WealthManagmentDiscriptions />
-              </WealthManagmentRightDiscription>
-            </WealthManagmentInnerWrapper>
-          </WealthManagmentWrapper>
-        </WealthManagmentContainer>
-      </WealthManagmentSection>
+      <WealthSection>
+        <WealthContainer>
+          <WealthWrapper>
+            <WealthInnerWrapper>
+              <WealthLeftBox>
+                <WealthLeftBoxWrapper>
+                  <WealthTitle>
+                    Wealth management consulting with a seal of approval in
+                    Vlotho
+                  </WealthTitle>
+                  <WealthListBox>
+                    {WealthData.map((output) => (
+                      <WealthProps
+                        key={output.id}
+                        WealthIcon={output.WealthIcon}
+                        WealthText={output.WealthText}
+                      />
+                    ))}
+                  </WealthListBox>
+                </WealthLeftBoxWrapper>
+              </WealthLeftBox>
+              <WealthRightBox>
+                <WealthRightBoxInner>
+                  <WealthRightBoxList>
+                    {WealthDataSecond.map((output) => (
+                      <WealthProps
+                        key={output.id}
+                        WealthIcon={output.WealthIcon}
+                        WealthText={output.WealthText}
+                      />
+                    ))}
+                  </WealthRightBoxList>
+                </WealthRightBoxInner>
+              </WealthRightBox>
+            </WealthInnerWrapper>
+          </WealthWrapper>
+        </WealthContainer>
+      </WealthSection>
     </>
   );
-}
+};

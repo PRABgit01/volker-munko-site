@@ -6,7 +6,6 @@ export const CompetenceContainer = styled.div`
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  background-color: #f9f9f9;
 
   @media (max-width: 991px) {
     max-width: max-content;
@@ -15,7 +14,7 @@ export const CompetenceContainer = styled.div`
 
 export const CompetenceWrapper = styled.div`
   margin: 0 19px 20px;
-  padding: 33px 120px 0px 118px;
+  padding: 33px 120px 0 118px;
 
   @media (max-width: 991px) {
     margin: 0;
@@ -36,10 +35,6 @@ export const CompetenceInnerWrapper = styled.div`
 export const CompetenceLeftBox = styled.div`
   width: 100%;
   max-width: 50%;
-
-  @media (max-width: 991px) {
-    max-width: none;
-  }
 `;
 
 export const CompetenceRightBox = styled.div`
@@ -47,13 +42,14 @@ export const CompetenceRightBox = styled.div`
   max-width: 50%;
 
   @media (max-width: 991px) {
-   max-width: 262px; 
+    max-width: 262px;
   }
 `;
 
 export const CompetenceTitle = styled.div`
   width: 100%;
   max-width: 406px;
+  position: relative;
   margin: 3px 0px 52px 0px;
   font-family: "Nunito-bold";
   font-size: 46px;
@@ -62,12 +58,11 @@ export const CompetenceTitle = styled.div`
   text-align: left;
   color: #14183e;
   z-index: 2;
-  position: relative;
 
   @media (max-width: 991px) {
     max-width: 256px;
-    line-height: 34px;
     font-size: 30px;
+    line-height: 34px;
     margin: 3px 0px 14px 0px;
   }
 
@@ -90,8 +85,8 @@ export const CompetenceDisccription = styled.p`
   line-height: 28px;
 
   @media (max-width: 991px) {
-   line-height: 17px;
-    font-size: 12px; 
+    line-height: 17px;
+    font-size: 12px;
   }
 `;
 
@@ -120,7 +115,6 @@ export const ExelenceAdviceComponent = styled.div`
 
   @media (max-width: 991px) {
     max-width: 15px;
-    border: solid 1px #3b3b3c;
   }
 `;
 
@@ -131,8 +125,6 @@ export const ExcelenceAdviceTitle = styled.p`
   margin: 2px 0px 0px 0px;
   font-family: "Nunito-bold";
   font-size: 24px;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 34px;
   text-align: left;
   color: #14183e;
@@ -143,9 +135,9 @@ export const ExcelenceAdviceTitle = styled.p`
 `;
 
 export const ExelenceTitileBox = styled.div`
-  width: 100%;
   display: flex;
   align-items: center;
+  width: 100%;
   gap: 20px;
 
   @media (max-width: 991px) {
@@ -188,14 +180,31 @@ export const ProductRightBox = styled.div`
   width: 100%;
   max-width: 100px;
 `;
+
 export const VerticalLine = styled.div`
   width: 0;
   height: 141px;
   margin: 1px 44px 48px;
   border: solid 0.5px #cfcfcf;
 
-  @media (max-width:991px) {
-    margin: 1px 40px 15px 
+  @media (max-width: 991px) {
+    margin: 1px 40px 15px;
+  }
+`;
+
+export const HeadingGradient = styled.div`
+  position: relative;
+  width: 100%;
+  max-width: 427px;
+  height: 68px;
+  top: -180px;
+  z-index: 0;
+  background-image: linear-gradient(to bottom, #f8e9ed, #fbfbfb);
+
+  @media (max-width: 991px) {
+    max-width: 250px;
+    top: -84px;
+    height: 44px;
   }
 `;
 

@@ -8,11 +8,11 @@ import {
   CompetenceRightBox,
   CompetenceSection,
   CompetenceTitle,
-  CompetenceTitleGradient,
   CompetenceWrapper,
   ExcelenceAdviceTitle,
   ExelenceAdviceComponent,
   ExelenceTitileBox,
+  HeadingGradient,
   ProductBox,
   ProductDiscription,
   ProductLeftBox,
@@ -33,6 +33,7 @@ export function Competence() {
             <CompetenceInnerWrapper>
               <CompetenceLeftBox>
                 <CompetenceTitle>Competence for your finances</CompetenceTitle>
+                <HeadingGradient/>
                 <CompetenceDisccription>
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.

@@ -39,10 +39,10 @@ export const AssetManagmentImageContainer = styled.div`
 `;
 
 export const AssetManagmentImage = styled.img`
+  position: relative;
   width: 100%;
   max-width: 108px;
   height: 63px;
-  position: relative;
 `;
 
 export const WhyAssetManagmentContainer = styled.div`
@@ -69,8 +69,6 @@ export const AboutUsBox = styled.div`
   margin: 27px 13px 4px 3px;
   font-family: "Nunito-SemiBold";
   font-size: 20px;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 2px;
   text-align: left;
   color: #37415c;
@@ -98,8 +96,6 @@ export const AssetManagmentContact = styled.p`
   font-family: "Nunito-SemiBold";
   font-size: 16px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 3px;
   color: #3b3b3c;
 

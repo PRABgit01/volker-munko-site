@@ -1,15 +1,16 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.li`
-  width: 265px;
+  position: relative;
+  width:100%;
+  max-width: 265px;
   height: 313px;
   margin: 33px 5px 31px 17px;
   padding: 20px 17px 39px 25.2px;
   border-radius: 20px;
   border: solid 1px #e9e5e5;
   background-color: #fff;
-  position: relative;
-  
+
   &:hover {
     background-color: #000;
     color: #ffffff;
@@ -24,11 +25,6 @@ export const CardContainer = styled.li`
       transform: rotatex(360deg);
       transition: transform 1s ease;
     }
-
-    & > * {
-      pointer-events: none;
-      opacity: 0;
-    }
   }
 `;
 
@@ -36,24 +32,31 @@ export const CardImageBox = styled.div``;
 
 export const CardImageInfo = styled.img`
   position: relative;
-  width: 22px;
+  width:100%;
+  max-width: 22px;
   left: 238px;
   top: -6px;
+
+  @media (max-width: 991px) {
+    left: 218px;
+  }
 `;
 
 export const CardImage = styled.img`
   position: relative;
-  width: 120px;
+  width:100%;
+  max-width: 120px;
   left: 69px;
 `;
 
 export const CardButton = styled.div`
-  margin: 40px;
-  width: 159px;
+  width:100%;
+  max-width: 159px;
   height: 31px;
   text-align: center;
   font-size: 15px;
-  padding: 13px 0px 0px 0px;
+  margin: 40px;
+  padding: 13px 0 0 0;
   border-radius: 10px;
   background-color: #ececec;
   text-shadow: 4px 4px 10px #fff;
@@ -74,8 +77,9 @@ export const CardWrapper = styled.ul`
   margin: 0 auto;
   list-style: none;
 
-  @media (max-width:991px) {
-   max-width: 305px;
+  @media (max-width: 991px) {
+    max-width: 305px;
+    padding: 0;
   }
 `;
 

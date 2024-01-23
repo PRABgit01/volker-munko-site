@@ -59,12 +59,10 @@ export const RightInnerboxHeading = styled.div`
   width: 100%;
   max-width: 547px;
   height: 138px;
-  padding: 1px 16px 46px 20px;
-  font-family: "Quicksand";
+  padding: 0 16px 46px 20px;
+  font-family: "Quicksand-Bold";
   font-size: 35px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 2px;
   letter-spacing: 3px;
   text-align: center;

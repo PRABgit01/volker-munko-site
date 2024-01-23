@@ -5,11 +5,11 @@ import {
   ContactPageInnerWrapper,
   ContactMapBox,
   ContactDiscriptionBox,
-  ContactAsset,
   ContactAssetBox,
   VolkerMunko,
   ContactIconContainer,
   ContactIcon,
+  StyledMapIframe,
 } from "./ContactStyled";
 import location from "../asserts/group-10824.png";
 import email from "../asserts/group-10824-3.png";
@@ -23,21 +23,10 @@ export function Contact() {
           <ContactPageWrapper>
             <ContactPageInnerWrapper>
               <ContactMapBox>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3191.708801974967!2d73.13016848451862!3d22.285120636635604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1705563079752!5m2!1sen!2sin"
-                  width="300"
-                  height="400"
-                  style={{ border: "0", borderRadius: "22px" }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
+                <StyledMapIframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.811733323151!2d73.12992577388097!3d22.285120379697574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc7dd361f0625%3A0x59326ccefe144813!2sAdrixus%20Tech%20Studio%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1705559938492!5m2!1sen!2sin" />
               </ContactMapBox>
               <ContactDiscriptionBox>
-                <ContactAssetBox>
-                  <ContactAsset />
-                  CONTACT
-                </ContactAssetBox>
+                <ContactAssetBox>CONTACT</ContactAssetBox>
                 <VolkerMunko>Volker Munko</VolkerMunko>
                 <ContactIconContainer>
                   <ContactIcon src={location} />
@@ -46,7 +35,9 @@ export function Contact() {
                 </ContactIconContainer>
                 <ContactIconContainer>
                   <ContactIcon src={phone} />
+                  <a href="tele:05733 881883">
                   05733 881883
+                  </a>
                 </ContactIconContainer>
                 <ContactIconContainer>
                   <ContactIcon src={email} />

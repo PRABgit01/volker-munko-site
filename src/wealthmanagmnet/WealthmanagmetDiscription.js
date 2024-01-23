@@ -1,38 +1,21 @@
+import React from "react";
 import {
-  WealthManagmentDiscription,
-  WealthManagmentIcon,
-} from "./Wealthmangment.styled";
+  WealthDiscriptionData,
+  WealthDataIcon,
+  WealthDiscription,
+} from "./Wealthmangment.styled.js";
 
-import icon from "../asserts/group-62.png";
-
-export function WealthManagmentDiscriptions() {
+export const WealthProps = (props) => {
   return (
     <>
-      <WealthManagmentDiscription>
-        <WealthManagmentIcon src={icon} />
-        Am I properly insured? Can I optimize my contracts? Do I end up paying
-        too much?
-      </WealthManagmentDiscription>
-      <WealthManagmentDiscription>
-        <WealthManagmentIcon src={icon} />
-        Am I properly insured? Can I optimize my contracts? Do I end up paying
-        too much?
-      </WealthManagmentDiscription>
-      <WealthManagmentDiscription>
-        <WealthManagmentIcon src={icon} />
-        Am I properly insured? Can I optimize my contracts? Do I end up paying
-        too much?
-      </WealthManagmentDiscription>
-      <WealthManagmentDiscription>
-        <WealthManagmentIcon src={icon} />
-        Am I properly insured? Can I optimize my contracts? Do I end up paying
-        too much?
-      </WealthManagmentDiscription>
-      <WealthManagmentDiscription>
-        <WealthManagmentIcon src={icon} />
-        Am I properly insured? Can I optimize my contracts? Do I end up paying
-        too much?
-      </WealthManagmentDiscription>
+      <WealthDiscriptionData>
+        <WealthDataIcon>
+          <img src={props.WealthIcon} alt="tickIcon" />
+        </WealthDataIcon>
+        <WealthDiscription>{props.WealthText}</WealthDiscription>
+      </WealthDiscriptionData>
     </>
   );
-}
+};
+
+export default WealthProps;

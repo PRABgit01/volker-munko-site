@@ -61,13 +61,13 @@ export const FooterHorizontal = styled.hr`
 `;
 
 export const FooterEnd = styled.footer`
-  color: #fff;
-  margin: 0 19px 20px;
-  padding: 33.3px 120px 0px 118px;
   display: flex;
   justify-content: space-between;
+  color: #fff;
+  margin: 0 18px 0px;
+  padding: 12px 118px 0px 96px;
 
-  @media (max-width:991px) {
+  @media (max-width: 991px) {
     margin: 0;
     padding: 0;
     flex-direction: column;

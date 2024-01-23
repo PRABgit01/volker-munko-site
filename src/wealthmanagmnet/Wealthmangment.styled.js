@@ -1,85 +1,157 @@
 import styled from "styled-components";
+import HouseProtection from "../asserts/house-protection-bank-removebg-preview.png";
+import HouseProtectionBackground from "../asserts/group-10818@2x.png";
 
-export const WealthManagmentSection = styled.section`
-  background-image: url(https://cdn.zeplin.io/5fedbd677b1a145df349f5a4/assets/50e6670f-d0d5-46ef-8f8b-bee22cf67970.svg);
+
+export const WealthSection = styled.section`
+  position: relative;
+  background: url(${HouseProtectionBackground});
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center top;
+
+  &:before {
+    content: "";
+    background: url(${HouseProtection});
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 560px 620px;
+    width: 100%;
+    max-width: 560px;
+    height: 620px;
+    position: absolute;
+    right: 0;
+    top: 167px;
+
+    @media (max-width: 991px) {
+      width: 100%;
+      max-width: 270px;
+      height: 290px;
+      background-size: 270px 290px;
+      top: 230px;
+    }
+  }
 `;
 
-export const WealthManagmentContainer = styled.div`
+export const WealthContainer = styled.div``;
+
+export const WealthWrapper = styled.div`
   width: 100%;
-  max-width: 1366px;
+  max-width: 1100px;
   margin: 0 auto;
+`;
+
+export const WealthInnerWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 180px 0;
 
   @media (max-width: 991px) {
-    max-width: max-content;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 140px 0 70px;
   }
 `;
 
-export const WealthManagmentWrapper = styled.div`
-  margin: 0 19px 20px;
-  padding: 33px 0px 0px 118px;
+export const WealthLeftBox = styled.div`
+  width: 100%;
+  max-width: 530px;
+`;
 
+export const WealthLeftBoxWrapper = styled.div``;
+
+export const WealthTitle = styled.div`
   position: relative;
+  width: 100%;
+  max-width: 565px;
+  font-family: "Nunito-Bold";
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 70px;
+  color: #ffffff;
+  margin: 0 0 120px 0;
+  padding: 64px 0 0;
 
-  ::before {
+  &::before {
     content: "";
     position: absolute;
-    width: 100%;
-    max-width: 20px;
-    height: 100%;
-    max-height: 20px;
-    background-image: url(https://cdn.zeplin.io/5fedbd677b1a145df349f5a4/assets/5e6026ea-fe52-4990-a864-6c168d1e561a.png);
-    background-size: cover;
+    left: 0;
+    bottom: -50px;
+    height: 5px;
+    width: 190px;
+    background: #ffffff;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 23px;
+    line-height: 30px;
+    margin: 0 0 30px 0;
+    padding: 0;
+
+    &::before {
+      width: 95px;
+      height: 3px;
+      bottom: -30px;
+    }
   }
 `;
 
-export const WealthManagmentInnerWrapper = styled.div`
+export const WealthListBox = styled.ul`
+  list-style: none;
+
+  @media (max-width: 991px) {
+    margin: 300px 0 0;
+  }
+`;
+
+export const WealthDiscriptionData = styled.li`
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
-  max-width: 821px;
-  height: 1000px;
-  margin: 100px 21px 61px 0;
-  font-size: 41px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 34px;
-  text-align: left;
-  color: #fff;
+  max-width: 490px;
+  font-family: "Nunito-Regular";
+  margin: 0;
+
+  @media (max-width: 991px) {
+    margin: 0 0 20px -30px;
+  }
 `;
 
-export const LeftDiscriptionBox = styled.div`
-  width: 100%;
-  max-width: 400px;
+export const WealthDataIcon = styled.div`
+  margin: 30px 30px 0 0;
 `;
 
-export const WealthManagmentLine = styled.div`
-  width: 100%;
-  max-width: 191px;
-  height: 0;
-  margin: 61px 360px 39px 10px;
-  border: solid 5px #fff;
-`;
+export const WealthRightBoxInner = styled.div``;
 
-export const WealthManagmentDiscription = styled.div`
-  display: flex;
+export const WealthDiscription = styled.p`
+  font-family: "Nunito-Regular";
   font-size: 20px;
-  gap: 10px;
-  padding: 24px 0px 24px 0px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #f3f3f3;
+
+  @media (max-width: 991px) {
+    font-size: 14px;
+  }
 `;
 
-export const WealthManagmentIcon = styled.img`
+export const WealthRightBox = styled.div`
+  max-width: 500px;
   width: 100%;
-  width: 40px;
-  height: 40px;
+  margin: 0 0 0 30px;
+
+  @media (max-width: 991px) {
+    max-width: 344px;
+  }
 `;
 
-export const WealthManagmentRightDiscription = styled.div`
-  margin: 20px 0px 0px 0px;
-  width: 100%;
-`;
+export const WealthRightBoxList = styled.ul`
+  margin: 550px 0 0 0;
+  list-style: none;
 
-export const RightDiscriptionImage = styled.img`
-  margin: 5px 0px 0px 97px;
+  @media (max-width: 991px) {
+    margin: 0 0 0 -30px;
+  }
 `;
