@@ -15,7 +15,7 @@ import {
 } from "./Wealthmangment.styled.js";
 
 import { WealthProps } from "./WealthmanagmetDiscription";
-import { WealthData, WealthDataSecond } from "./WealthData";
+import { WealthData, WealthDataSecond } from "../Data/Data.js";
 
 export const WealthManagement = () => {
   return (

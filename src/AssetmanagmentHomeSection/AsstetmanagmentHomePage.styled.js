@@ -122,7 +122,7 @@ export const ContactButtonContainer = styled.button`
   width: 100%;
   max-width: 207px;
   height: 60px;
-  margin: 66px 879px 0 4px;
+  margin: 66px 300px 0 4px;
   border-radius: 10px;
   border: none;
   background-color: #484849;
@@ -137,7 +137,7 @@ export const ContactMobileButtonContainer = styled.button`
   display: none;
   width: 100%;
   height: 60px;
-  margin: 66px 879px 0 4px;
+  margin: 66px 10px 0 4px;
   border-radius: 10px;
   border: none;
   background-color: #484849;

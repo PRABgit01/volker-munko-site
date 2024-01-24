@@ -9,7 +9,8 @@ import {
   ContentBox,
 } from "./Cardsection.styled";
 import information from "../../asserts/information-button-2.png";
-import { CardData } from "./data";
+// import { CardData } from "./data";
+import { CardData } from "../../Data/Data";
 
 export function CardSection() {
   const ProductMenu = CardData.map((output) => (

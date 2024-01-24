@@ -148,7 +148,7 @@ export const WealthRightBox = styled.div`
 `;
 
 export const WealthRightBoxList = styled.ul`
-  margin: 550px 0 0 0;
+  margin: 600px 0 0 0;
   list-style: none;
 
   @media (max-width: 991px) {
