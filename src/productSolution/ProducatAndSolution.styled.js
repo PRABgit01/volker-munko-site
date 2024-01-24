@@ -66,7 +66,7 @@ export const ProductSolutionDiscription = styled.p`
 
   @media (max-width: 991px) {
     font-size: 15px;
-    padding: 0px 0px 27px 0px;
+    padding: 0 0 27px 0;
   }
 `;
 
@@ -93,14 +93,14 @@ export const PrivateCustomerTitle = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  padding: 10px 0px;
+  padding: 10px 0;
   color: #fff;
   margin: 0;
   text-shadow: 4px 4px 20px #fff;
 
   @media (max-width: 991px) {
     font-size: 9px;
-    padding: 6px 0px;
+    padding: 6px 0;
   }
 `;
 
@@ -110,8 +110,8 @@ export const CorporateCustomerTitle = styled.div`
   max-width: 493px;
   height: 41px;
   border-radius: 36px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.03);
-  border: solid 1px #eee0e4;
+  border:1px solid #eee0e4;
+  box-shadow: 0 3px 6px 0 #0000FF1A;
   background-color: #fff;
 
   @media (max-width: 991px) {

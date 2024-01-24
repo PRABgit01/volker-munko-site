@@ -18,7 +18,7 @@ export const FooterContainer = styled.div`
 
 export const FooterPageWrapper = styled.div`
   margin: 0 19px 20px;
-  padding: 33px 120px 0px 118px;
+  padding: 33px 120px 0 118px;
 
   @media (max-width: 991px) {
     margin: 0;
@@ -36,7 +36,7 @@ export const FooterPageInnerWrapper = styled.div`
 `;
 
 export const FooterLogo = styled.img`
-  padding: 65px 0px 0px 0px;
+  padding: 65px 0 0 0;
   width: 100%;
   max-width: 300px;
   height: 198px;
@@ -44,19 +44,19 @@ export const FooterLogo = styled.img`
   @media (max-width: 991px) {
     max-width: 86px;
     height: 67px;
-    padding: 113px 0px 0px 0px;
+    padding: 113px 0 0 0;
   }
 `;
 
 export const FooterDiscription = styled.div`
-  padding: 12px 0px 0px 0px;
+  padding: 12px 0 0 0;
   text-align: center;
   color: #fff;
   line-height: 2;
 `;
 
 export const FooterHorizontal = styled.hr`
-  margin: 218px 0px 0px 0px;
+  margin: 218px 0 0 0;
   background-color: #fff;
 `;
 
@@ -64,8 +64,8 @@ export const FooterEnd = styled.footer`
   display: flex;
   justify-content: space-between;
   color: #fff;
-  margin: 0 18px 0px;
-  padding: 12px 118px 0px 96px;
+  margin: 0 18px 0;
+  padding: 12px 118px 0 96px;
 
   @media (max-width: 991px) {
     margin: 0;
@@ -81,6 +81,6 @@ export const RightFooterContainer = styled.div`
 export const RightFooteverticalline = styled.div`
   height: 12px;
   width: 0;
-  border: solid 1px #000;
-  margin: 0px 12px 0px;
+  border:1px solid  #000;
+  margin: 0 12px 0;
 `;

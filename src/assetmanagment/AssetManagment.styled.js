@@ -6,10 +6,6 @@ export const AssetManagmentContainer = styled.div`
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  background-color: #f9f9f9;
-
-  @media (max-width: 991px) {
-  }
 `;
 
 export const AssetManagmentWrapper = styled.div`
@@ -82,10 +78,10 @@ export const ContactButton = styled.button`
   width: 100%;
   max-width: 136px;
   height: 50px;
-  border-radius: 10px;
   background-color: #fff;
+  border-radius: 10px;
   border: none;
-  margin: 5px 0px;
+  margin: 5px 0;
 
   @media (max-width: 991px) {
     display: none;

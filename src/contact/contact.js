@@ -10,6 +10,8 @@ import {
   ContactIconContainer,
   ContactIcon,
   StyledMapIframe,
+  ExternalLink,
+  HeadingGradient,
 } from "./ContactStyled";
 import location from "../asserts/group-10824.png";
 import email from "../asserts/group-10824-3.png";
@@ -27,21 +29,26 @@ export function Contact() {
               </ContactMapBox>
               <ContactDiscriptionBox>
                 <ContactAssetBox>CONTACT</ContactAssetBox>
+                <HeadingGradient />
                 <VolkerMunko>Volker Munko</VolkerMunko>
                 <ContactIconContainer>
                   <ContactIcon src={location} />
-                  Office for Allfinanz German investment advice On the heath 8
-                  32602 Vlotho
+                  <ExternalLink href="https://maps.google.com?q=latitude,longitude">
+                    Office for Allfinanz German investment advice On the heath 8
+                    32602 Vlotho
+                  </ExternalLink>
                 </ContactIconContainer>
                 <ContactIconContainer>
                   <ContactIcon src={phone} />
-                  <a href="tele:05733 881883">
-                  05733 881883
-                  </a>
+                  <ExternalLink href="tel:05733881883">
+                    05733 881883
+                  </ExternalLink>
                 </ContactIconContainer>
                 <ContactIconContainer>
                   <ContactIcon src={email} />
-                  Volker.Munko@allfinanz.ag
+                  <ExternalLink href="mailto:Volker.Munko@allfinanz.ag">
+                    Volker.Munko@allfinanz.ag
+                  </ExternalLink>
                 </ContactIconContainer>
               </ContactDiscriptionBox>
             </ContactPageInnerWrapper>

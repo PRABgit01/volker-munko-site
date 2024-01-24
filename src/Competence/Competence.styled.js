@@ -35,6 +35,10 @@ export const CompetenceInnerWrapper = styled.div`
 export const CompetenceLeftBox = styled.div`
   width: 100%;
   max-width: 50%;
+
+  @media (max-width: 991px) {
+    max-width: 100%;
+  }
 `;
 
 export const CompetenceRightBox = styled.div`
@@ -47,10 +51,10 @@ export const CompetenceRightBox = styled.div`
 `;
 
 export const CompetenceTitle = styled.div`
+  position: relative;
   width: 100%;
   max-width: 406px;
-  position: relative;
-  margin: 3px 0px 52px 0px;
+  margin: 3px 0 52px 0;
   font-family: "Nunito-bold";
   font-size: 46px;
   font-weight: bold;
@@ -63,7 +67,7 @@ export const CompetenceTitle = styled.div`
     max-width: 256px;
     font-size: 30px;
     line-height: 34px;
-    margin: 3px 0px 14px 0px;
+    margin: 3px 0 14px 0;
   }
 
   ::before {
@@ -97,7 +101,7 @@ export const CompetenceButton = styled.button`
   border-radius: 10px;
   border: none;
   background-color: #e6e6e6;
-  margin: 32px 0px;
+  margin: 32px 0;
 `;
 
 export const CompetenceButtonText = styled.p`
@@ -122,7 +126,7 @@ export const ExcelenceAdviceTitle = styled.p`
   width: 100%;
   max-width: 263px;
   height: 36px;
-  margin: 2px 0px 0px 0px;
+  margin: 2px 0 0 0;
   font-family: "Nunito-bold";
   font-size: 24px;
   line-height: 34px;
@@ -154,13 +158,13 @@ export const ServiceBox = styled.div`
   max-width: 400px;
   height: 328px;
   border-radius: 23px;
-  border: solid 1px #cfcfcf;
+  border:1px solid  #cfcfcf;
   background-color: #fff;
-  margin: 42px 0px 0px 0px;
+  margin: 42px 0 0 0;
 
   @media (max-width: 991px) {
     margin: 0;
-    padding: 0px 29px 0px 26px;
+    padding: 0 29px 0 26px;
     height: 262px;
   }
 `;
@@ -185,7 +189,7 @@ export const VerticalLine = styled.div`
   width: 0;
   height: 141px;
   margin: 1px 44px 48px;
-  border: solid 0.5px #cfcfcf;
+  border:0.5px solid  #cfcfcf;
 
   @media (max-width: 991px) {
     margin: 1px 40px 15px;

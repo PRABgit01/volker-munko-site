@@ -46,12 +46,10 @@ export function Competence() {
                 </CompetenceButton>
               </CompetenceLeftBox>
               <CompetenceRightBox>
-                {/* emtpy line */}
                 <ExelenceTitileBox>
                   <ExelenceAdviceComponent />
                   <ExcelenceAdviceTitle>EXCELLENT ADVICE</ExcelenceAdviceTitle>
                 </ExelenceTitileBox>
-                {/* exit line */}
                 <ServiceBox>
                   <ProductBox>
                     <ProductLeftBox>

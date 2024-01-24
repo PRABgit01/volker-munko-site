@@ -10,7 +10,7 @@ export const WealthProps = (props) => {
     <>
       <WealthDiscriptionData>
         <WealthDataIcon>
-          <img src={props.WealthIcon} alt="tickIcon" />
+          <img src={props.WealthIcon} />
         </WealthDataIcon>
         <WealthDiscription>{props.WealthText}</WealthDiscription>
       </WealthDiscriptionData>

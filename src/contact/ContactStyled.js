@@ -42,14 +42,14 @@ export const ContactMapBox = styled.div`
 `;
 
 export const StyledMapIframe = styled.iframe`
-  width:100%;
+  width: 100%;
   max-width: 400px;
   height: 450px;
   border: 0;
   border-radius: 22px;
 
   @media (max-width: 991px) {
-    width:100%;
+    width: 100%;
     max-width: 300px;
     height: 300px;
     padding: 0 0 23px 0;
@@ -98,6 +98,7 @@ export const ContactAsset = styled.div`
 `;
 
 export const VolkerMunko = styled.div`
+  position: relative;
   width: 100%;
   max-width: 258px;
   height: 20px;
@@ -124,4 +125,25 @@ export const ContactIcon = styled.img`
   width: 100%;
   max-width: 50px;
   height: 50px;
+`;
+
+export const ExternalLink = styled.a`
+  color: #000;
+  text-decoration: none;
+`;
+export const HeadingGradient = styled.div`
+  position: relative;
+  width: 100%;
+  max-width: 218px;
+  height: 68px;
+  top: 81px;
+  left: 6px;
+  z-index: 0;
+  background-image: linear-gradient(to bottom, #f8e9ed, #fbfbfb);
+
+  @media (max-width: 991px) {
+    max-width: 219px;
+    top: 60px;
+    height: 44px;
+  }
 `;

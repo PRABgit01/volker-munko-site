@@ -19,6 +19,7 @@ export const HomePageWrapper = styled.div`
   background-position: right 20px bottom 10px;
   height: 650px;
 
+
   @media (max-width: 991px) {
   background-size: 300px 300px;
   height: 540px;
@@ -37,10 +38,10 @@ export const HomePageInnerWrapper = styled.div`
 `;
 
 export const HomePageGradient = styled.div`
+  position: relative;
   width: 100%;
   max-width: 427px;
   height: 68px;
-  position: relative;
   top: -73px;
   z-index: 0;
   background-image: linear-gradient(to bottom, #f8e9ed, #fbfbfb);
@@ -83,6 +84,7 @@ export const LeftBoxImage = styled.img`
 `;
 
 export const AssetManagmentBox = styled.div`
+  position: relative;
   width: 100%;
   max-width: 20px;
   font-family: "Nunito-Regular";
@@ -91,7 +93,6 @@ export const AssetManagmentBox = styled.div`
   text-align: right;
   color: #14183e;
   z-index: 1;
-  position: relative;
 
   @media (max-width: 991px) {
     font-size: 24px;

@@ -14,7 +14,6 @@ import {
   Mainsection,
   Mainwrapper,
   Rightsection,
-  Shapeelips,
   TitleGradient,
 } from "./Cards.styled.js";
 
@@ -47,13 +46,13 @@ export function Advantagespage() {
                       <DataContainer>
                         <CardIconImage>
                           <ListData>2</ListData>
-                        </CardIconImage>{" "}
+                        </CardIconImage>
                         Your finances: easier than ever With the
                       </DataContainer>
                       <DataContainer>
                         <CardIconImage>
                           <ListData>3</ListData>
-                        </CardIconImage>{" "}
+                        </CardIconImage>
                         best partners at your side
                       </DataContainer>
                     </LeftCardContainer>

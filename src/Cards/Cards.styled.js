@@ -55,13 +55,13 @@ export const Headingstyled = styled.div`
   font-family: "Quicksand-Bold";
   line-height: 70px;
   color: #000000;
-  padding: 99px 0px 22px 0px;
+  padding: 99px 0 22px 0;
   z-index: 0;
 
   @media (max-width: 991px) {
     width: 100%;
     max-width: 264px;
-    padding: 0px 0px 0px 15px;
+    padding: 0 0 0 15px;
     font-size: 28px;
     line-height: 35px;
   }
@@ -73,11 +73,11 @@ export const Discriptionstyled = styled.p`
   line-height: 13px;
   text-align: left;
   color: #37415c;
-  padding: 0px 0px 0px 0px;
+  padding: 0 0 0 0;
 
   @media (max-width: 991px) {
     width: 312px;
-    padding: 0px 0px 0px 15px;
+    padding: 0 0 0 15px;
     font-size: 11px;
   }
 `;
@@ -94,10 +94,10 @@ export const Contentstyled = styled.div`
 export const Imagewrapper = styled.img`
   width: 100%;
   max-width: 501px;
-  padding: 0px 0px 0px 10px;
+  padding: 0 0 0 10px;
 
   @media (max-width: 991px) {
-    padding: 38px 0px 0px 0px;
+    padding: 38px 0 0 0;
     max-width: 400px;
   }
 `;
@@ -106,9 +106,9 @@ export const Cardcontainer = styled.div`
   display: flex;
   width: 100%;
   height: 590px;
-  margin: 19px 0 0px;
+  margin: 19px 0 0;
   border-radius: 24px;
-  box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 40px 0 #0000FF1A;;
   background-color: #fff;
 
   @media (max-width: 991px) {
@@ -142,10 +142,10 @@ export const LeftCardContainer = styled.ul`
 `;
 
 export const TitleGradient = styled.div`
+  position: relative;
   width: 100%;
   max-width: 342px;
   height: 68px;
-  position: relative;
   top: 163px;
   left: 12px;
   background-image: linear-gradient(to bottom, #f8e9ed, #fbfbfb);

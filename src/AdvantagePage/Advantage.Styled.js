@@ -27,10 +27,10 @@ export const AdvantagePageBox = styled.div`
   width: 100%;
   max-width: 1088px;
   height: 482px;
-  margin: 19px 0 0px;
+  margin: 19px 0 0;
   padding: 15px 75px 79px 15px;
   border-radius: 24px;
-  box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 40px 0 #0000FF1A;;
   background-color: #fff;
 `;
 
