@@ -3,15 +3,6 @@ import assetHomeimage from "../asserts/group-10811.png";
 
 export const AssetManagmentHomePageSection = styled.section``;
 
-export const AssetManagmentHomePageContainer = styled.div`
-  position: relative;
-  margin: 20px;
-  padding: 5px 0 30px;
-
-  @media (max-width: 991px) {
-    max-width: max-content;
-  }
-`;
 
 export const HomePageWrapper = styled.div`
   background: url(${assetHomeimage}) no-repeat;
@@ -125,7 +116,7 @@ export const ContactButtonContainer = styled.button`
   border-radius: 10px;
   border: none;
   background-color: #484849;
-
+ 
   @media (max-width: 991px) {
     display: none;
     margin: 0;

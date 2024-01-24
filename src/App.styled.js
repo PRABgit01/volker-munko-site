@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 import NunitoBlack from "./fonts/Nunito-Black.ttf";
 import NunitoBold from "./fonts/Nunito-Bold.ttf";
@@ -46,5 +47,16 @@ body{
     font-family: 'Quicksand-Bold';
     src: url(${QuicksandBold}) format('truetype');
     
+  }
+`;
+
+
+export const Container = styled.div`
+  position: relative;
+  margin: 20px;
+  padding: 5px 0 30px;
+
+  @media (max-width: 991px) {
+    max-width: max-content;
   }
 `;

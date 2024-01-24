@@ -1,6 +1,5 @@
 import {
   AssetManagmentHomePageSection,
-  AssetManagmentHomePageContainer,
   HomePageWrapper,
   HomePageInnerWrapper,
   RightBox,
@@ -16,7 +15,6 @@ export function AssetManagementHomePage() {
   return (
     <>
       <AssetManagmentHomePageSection>
-        <AssetManagmentHomePageContainer>
           <HomePageWrapper>
             <HomePageInnerWrapper>
               <RightBox>
@@ -37,7 +35,6 @@ export function AssetManagementHomePage() {
           <ContactMobileButtonContainer>
             <ButtonText>Contact Us</ButtonText>
           </ContactMobileButtonContainer>
-        </AssetManagmentHomePageContainer>
       </AssetManagmentHomePageSection>
     </>
   );
