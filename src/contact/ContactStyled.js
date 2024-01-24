@@ -2,16 +2,6 @@ import styled from "styled-components";
 
 export const ContactSection = styled.section``;
 
-export const ContactContainer = styled.div`
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
-
-  @media (max-width: 991px) {
-    max-width: max-content;
-  }
-`;
-
 export const ContactPageWrapper = styled.div`
   margin: 0 19px 20px;
   padding: 33px 120px 0 118px;
