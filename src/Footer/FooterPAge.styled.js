@@ -36,10 +36,10 @@ export const FooterPageInnerWrapper = styled.div`
 `;
 
 export const FooterLogo = styled.img`
-  padding: 65px 0 0 0;
+  padding: 65px 0 27px 0px;
   width: 100%;
-  max-width: 300px;
-  height: 198px;
+  max-width: 288px;
+  height: 172px;
 
   @media (max-width: 991px) {
     max-width: 86px;
@@ -81,6 +81,6 @@ export const RightFooterContainer = styled.div`
 export const RightFooteverticalline = styled.div`
   height: 12px;
   width: 0;
-  border:1px solid  #000;
+  border: 1px solid #6f6b6b;
   margin: 0 12px 0;
 `;

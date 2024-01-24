@@ -81,6 +81,8 @@ export const WealthTitle = styled.div`
     height: 5px;
     width: 190px;
     background: #ffffff;
+
+    
   }
 
   @media (max-width: 991px) {

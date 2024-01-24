@@ -6,7 +6,6 @@ import NunitoLight from "./fonts/Nunito-Light.ttf";
 import NunitoSemiBold from "./fonts/Nunito-SemiBold.ttf";
 import NunitoMedium from "./fonts/Nunito-Medium.ttf";
 import QuicksandBold from "./fonts/Quicksand-Bold.ttf";
-import Quicksand from "./fonts/Quicksand-Bold.ttf";
 
 export const GlobalStyles = createGlobalStyle`
 body{
