@@ -14,7 +14,9 @@ export const CompetenceWrapper = styled.div`
 
 export const CompetenceInnerWrapper = styled.div`
   display: flex;
-  gap: 70px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 
   @media (max-width: 991px) {
     flex-direction: column;
@@ -148,7 +150,7 @@ export const ServiceBox = styled.div`
   max-width: 400px;
   height: 328px;
   border-radius: 23px;
-  border:1px solid  #cfcfcf;
+  border: 1px solid #cfcfcf;
   background-color: #fff;
   margin: 42px 0 0 0;
 
@@ -169,8 +171,8 @@ export const ProductLeftBoxImage = styled.img`
   width: 100%;
   max-width: 100px;
 
-  @media (max-width:991px) {
-       max-width: 85px; 
+  @media (max-width: 991px) {
+    max-width: 85px;
   }
 `;
 
@@ -183,7 +185,7 @@ export const ProdcutDivider = styled.div`
   width: 0;
   height: 141px;
   margin: 1px 44px 48px;
-  border:0.5px solid  #cfcfcf;
+  border: 0.5px solid #cfcfcf;
 
   @media (max-width: 991px) {
     margin: 0px 26px 15px;
