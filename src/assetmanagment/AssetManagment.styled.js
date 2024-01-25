@@ -1,17 +1,12 @@
 import styled from "styled-components";
+import { Theme } from "../theme";
 
-export const AssetManagmentSection = styled.section``;
+export const AssetManagementSection = styled.section``;
 
-export const AssetManagmentContainer = styled.div`
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
-`;
-
-export const AssetManagmentWrapper = styled.div`
-  margin: 0 19px 20px;
-  padding: 33px 120px 0 118px;
-  background-color: #f8f8f8;
+export const AssetManagementWrapper = styled.div`
+  margin: 0 32px 25px;
+  padding: 34px 19px 0 40px;
+  background-color: ${Theme.backgroundColor};
 
   @media (max-width: 991px) {
     margin: 0;
@@ -19,40 +14,41 @@ export const AssetManagmentWrapper = styled.div`
   }
 `;
 
-export const AssetManagmentHeader = styled.header`
+export const AssetManagementHeader = styled.header`
   display: flex;
+  align-items: start;
   justify-content: space-between;
 `;
 
-export const AssetManagmentImageContainer = styled.div`
+export const AssetManagementImageBox = styled.div`
   width: 100%;
   max-width: 440px;
   height: 71px;
   object-fit: contain;
 
   @media (max-width: 991px) {
-    margin: 12px 71px 6px 12px;
+    margin: 12px 40px 6px 12px;
   }
 `;
 
-export const AssetManagmentImage = styled.img`
+export const AssetManagementImage = styled.img`
   position: relative;
   width: 100%;
   max-width: 108px;
   height: 63px;
 `;
 
-export const WhyAssetManagmentContainer = styled.div`
+export const WhyAssetManagementContainer = styled.div`
   width: 100%;
   max-width: 272px;
   height: 27px;
-  margin: 22px 24px 19px 1px;
-  font-family: "Nunito-SemiBold";
+  margin: 22px 24px 19px 0;
+  font-family: Nunito-SemiBold;
   font-size: 20px;
   line-height: 12px;
   letter-spacing: 2px;
   text-align: left;
-  color: #37415c;
+  color: ${Theme.primary};
 
   @media (max-width: 991px) {
     display: none;
@@ -62,13 +58,13 @@ export const WhyAssetManagmentContainer = styled.div`
 export const AboutUsBox = styled.div`
   width: 100%;
   max-width: 110px;
-  height: 27px;
-  margin: 27px 13px 4px 3px;
-  font-family: "Nunito-SemiBold";
+  height: 35px;
+  margin: 25px 13px 4px 0;
+  font-family: Nunito-SemiBold;
   font-size: 20px;
-  line-height: 2px;
+  line-height: 12px;
   text-align: left;
-  color: #37415c;
+  color: ${Theme.primary};
 
   @media (max-width: 991px) {
     display: none;
@@ -79,22 +75,22 @@ export const ContactButton = styled.button`
   width: 100%;
   max-width: 136px;
   height: 50px;
-  background-color: #fff;
+  background-color: ${Theme.whiteBackground};
   border-radius: 10px;
-  border: none;
   margin: 5px 0;
+  border: none;
 
   @media (max-width: 991px) {
     display: none;
   }
 `;
 
-export const AssetManagmentContact = styled.p`
-  font-family: "Nunito-SemiBold";
+export const AssetManagementContact = styled.p`
+  font-family: Nunito-SemiBold;
   font-size: 16px;
   font-weight: bold;
-  line-height: 3px;
-  color: #3b3b3c;
+  line-height: 13px;
+  color: ${Theme.primary};
 
   @media (max-width: 991px) {
     display: none;
@@ -105,16 +101,18 @@ export const MobileNavigation = styled.img`
   display: none;
 
   @media (max-width: 991px) {
+    position: absolute;
     display: block;
     width: 100%;
     max-width: 40px;
     height: 63px;
-    position: absolute;
   }
 `;
 
-export const NAvigationBox = styled.div`
+export const NavigationBox = styled.div`
   display: flex;
+  align-items: start;
+  justify-content: flex-end;
   width: 100%;
 
   @media (max-width: 991px) {
