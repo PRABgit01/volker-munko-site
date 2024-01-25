@@ -1,18 +1,18 @@
 import styled from "styled-components";
-import assetHomeimage from "../asserts/group-10811.png";
+import assetHome from "../asserts/HomePage.png";
+import { Theme } from "../theme";
 
-export const AssetManagmentHomePageSection = styled.section``;
-
+export const AssetManagementHomePageSection = styled.section``;
 
 export const HomePageWrapper = styled.div`
-  background: url(${assetHomeimage}) no-repeat;
-  background-size: 660px 640px;
+  background: url(${assetHome}) no-repeat;
+  background-size: 640px 640px;
   background-position: right 20px bottom 10px;
   height: 650px;
 
   @media (max-width: 991px) {
-  background-size: 300px 300px;
-  height: 540px;
+    background-size: 300px 300px;
+    height: 540px;
   }
 `;
 
@@ -27,32 +27,7 @@ export const HomePageInnerWrapper = styled.div`
   }
 `;
 
-export const HomePageGradient = styled.div`
-  position: relative;
-  width: 100%;
-  max-width: 427px;
-  height: 68px;
-  top: -73px;
-  z-index: 0;
-  background-image: linear-gradient(to bottom, #f8e9ed, #fbfbfb);
-
-  @media (max-width: 991px) {
-    max-width: 250px;
-    top: -33px;
-    height: 44px;
-  }
-`;
-
-export const LeftBox = styled.div`
-  width: 100%;
-  max-width: 40%;
-
-  @media (max-width: 991px) {
-    max-width: 100%;
-  }
-`;
-
-export const RightBox = styled.div`
+export const AssetManagementRightBox = styled.div`
   width: 100%;
   max-width: 1000px;
 
@@ -65,58 +40,73 @@ export const LeftBoxImage = styled.img`
   width: 100%;
   max-width: 406px;
   height: 386px;
-  align-items: left;
 
   @media (max-width: 991px) {
     max-width: 350px;
-    height: 346px;
+    height: 350px;
   }
 `;
 
-export const AssetManagmentBox = styled.div`
+export const AssetManagementBox = styled.div`
   position: relative;
   width: 100%;
-  max-width: 20px;
-  font-family: "Nunito-Regular";
+  max-width: 343px;
+  font-family: Nunito-Regular;
   font-size: 54px;
   font-weight: bold;
-  text-align: right;
-  color: #14183e;
+  text-align: left;
+  color: ${Theme.primary};
   z-index: 1;
 
   @media (max-width: 991px) {
     font-size: 24px;
   }
-`;
 
-export const HomePageBox = styled.div``;
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    max-width: 427px;
+    height: 68px;
+    z-index: -1;
+    top: 71px;
+    background-image: linear-gradient(to bottom, #f8e9ed, #fbfbfb);
 
-export const HomePageDiscription = styled.p`
-  width: 100%;
-  max-width: 485px;
-  height: 86px;
-  font-family: "Nunito-Medium";
-  font-size: 16px;
-  line-height: 33px;
-  text-align: left;
-  color: #37415c;
-
-  @media (max-width: 991px) {
-    line-height: 20px;
-    text-align: left;
-    font-size: 11px;
+    @media (max-width: 991px) {
+      max-width: 206px;
+      top: 5px;
+      height: 14px;
+    }
   }
 `;
 
-export const ContactButtonContainer = styled.button`
+export const HomePageDescription = styled.p`
+  width: 100%;
+  max-width: 485px;
+  height: 86px;
+  font-family: Nunito-Medium;
+  font-size: 16px;
+  line-height: 33px;
+  text-align: left;
+  color: ${Theme.primary};
+
+  @media (max-width: 991px) {
+    padding: 12px 0;
+    font-size: 12px;
+    line-height: 23px;
+    text-align: left;
+  }
+`;
+
+export const ContactButtonBox = styled.button`
   width: 100%;
   max-width: 207px;
   height: 60px;
-  margin: 66px 0 4px;
+  margin: 10px 0;
   border-radius: 10px;
   border: none;
-  background-color: #484849;
- 
+  background-color: ${Theme.primary};
+
   @media (max-width: 991px) {
     display: none;
     margin: 0;
@@ -127,10 +117,10 @@ export const ContactMobileButtonContainer = styled.button`
   display: none;
   width: 100%;
   height: 60px;
-  margin: 66px 10px 0 4px;
+  margin: 50px 10px 0;
   border-radius: 10px;
   border: none;
-  background-color: #484849;
+  background-color: ${Theme.primary};
 
   @media (max-width: 991px) {
     display: block;
@@ -140,9 +130,9 @@ export const ContactMobileButtonContainer = styled.button`
 `;
 
 export const ButtonText = styled.p`
-  font-family: "Quicksand-Bold";
+  font-family: Quicksand-Bold;
   font-size: 15px;
   font-weight: 600;
-  color: #fff;
-  text-shadow: 4px 4px 20px #fff;
+  color: ${Theme.whiteBackground};
+  text-shadow: 4px 4px 20px #ffffff;
 `;

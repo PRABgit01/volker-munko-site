@@ -7,12 +7,10 @@ import { Contact } from "./contact/contact";
 function App() {
   return (
     <div>
-      <Container>
         <GlobalStyles />
         <AssetManagementHomePage />
         <Competence />
         <Contact />
-      </Container>
     </div>
   );
 }

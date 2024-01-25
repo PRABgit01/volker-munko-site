@@ -1,12 +1,11 @@
 import {
-  AssetManagmentHomePageSection,
+  AssetManagementHomePageSection,
   HomePageWrapper,
   HomePageInnerWrapper,
-  RightBox,
-  AssetManagmentBox,
-  HomePageGradient,
-  HomePageDiscription,
-  ContactButtonContainer,
+  AssetManagementRightBox,
+  AssetManagementBox,
+  HomePageDescription,
+  ContactButtonBox,
   ButtonText,
   ContactMobileButtonContainer,
 } from "./AsstetmanagmentHomePage.styled";
@@ -14,28 +13,27 @@ import {
 export function AssetManagementHomePage() {
   return (
     <>
-      <AssetManagmentHomePageSection>
-          <HomePageWrapper>
-            <HomePageInnerWrapper>
-              <RightBox>
-                <AssetManagmentBox>Asset management</AssetManagmentBox>
-                <HomePageGradient />
-                <HomePageDiscription>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution
-                </HomePageDiscription>
-                <ContactButtonContainer>
-                  <ButtonText>Contact Us</ButtonText>
-                </ContactButtonContainer>
-              </RightBox>
-            </HomePageInnerWrapper>
-          </HomePageWrapper>
-          <ContactMobileButtonContainer>
-            <ButtonText>Contact Us</ButtonText>
-          </ContactMobileButtonContainer>
-      </AssetManagmentHomePageSection>
+      <AssetManagementHomePageSection>
+        <HomePageWrapper>
+          <HomePageInnerWrapper>
+            <AssetManagementRightBox>
+              <AssetManagementBox>Asset management</AssetManagementBox>
+              <HomePageDescription>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution
+              </HomePageDescription>
+              <ContactButtonBox>
+                <ButtonText>Contact Us</ButtonText>
+              </ContactButtonBox>
+            </AssetManagementRightBox>
+          </HomePageInnerWrapper>
+        </HomePageWrapper>
+        <ContactMobileButtonContainer>
+          <ButtonText>Contact Us</ButtonText>
+        </ContactMobileButtonContainer>
+      </AssetManagementHomePageSection>
     </>
   );
 }

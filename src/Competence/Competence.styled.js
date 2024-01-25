@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import { Theme } from "../theme";
 
 export const CompetenceSection = styled.section``;
 
 export const CompetenceWrapper = styled.div`
-  margin: 0 19px 20px;
-  padding: 33px 120px 0 118px;
+  margin: 0 50px 20px;
+  padding: 33px 0px 0 50px;
 
   @media (max-width: 991px) {
     margin: 0;
@@ -14,9 +15,9 @@ export const CompetenceWrapper = styled.div`
 
 export const CompetenceInnerWrapper = styled.div`
   display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 
   @media (max-width: 991px) {
     flex-direction: column;
@@ -46,38 +47,38 @@ export const CompetenceTitle = styled.div`
   position: relative;
   width: 100%;
   max-width: 406px;
-  margin: 3px 0 52px 0;
-  font-family: "Nunito-bold";
+  margin: 3px 0 50px 0;
+  font-family: Nunito-bold;
   font-size: 46px;
   font-weight: bold;
   line-height: 57px;
   text-align: left;
-  color: #14183e;
-  z-index: 2;
+  color: ${Theme.primary};
+  z-index: 1;
 
   @media (max-width: 991px) {
     max-width: 256px;
     font-size: 30px;
     line-height: 34px;
-    margin: 3px 0 14px 0;
+    margin: 0 0 14px 0;
   }
 
-  ::before {
+  &::before {
+    content: " ";
     position: absolute;
     width: 100%;
-    max-width: 377px;
+    max-width: 350px;
     height: 72px;
-    object-fit: contain;
     z-index: -1;
     background-image: linear-gradient(to bottom, #f8e9ed, #fbfbfb);
   }
 `;
 
-export const CompetenceDisccription = styled.p`
-  color: #37415c;
+export const CompetenceDescription = styled.p`
+  color: ${Theme.primary};
   width: 100%;
   max-width: 500px;
-  font-family: "Nunito-Regular";
+  font-family: Nunito-Regular;
   line-height: 28px;
 
   @media (max-width: 991px) {
@@ -92,45 +93,50 @@ export const CompetenceButton = styled.button`
   height: 60px;
   border-radius: 10px;
   border: none;
-  background-color: #e6e6e6;
+  background-color: ${Theme.backgroundColor};
   margin: 32px 0;
 `;
 
 export const CompetenceButtonText = styled.p`
-  color: #14183e;
-  text-shadow: 4px 4px 20px #ffff;
+  color: ${Theme.primary};
+  text-shadow: 4px 4px 20px ${Theme.whiteBackground};
   font-size: 17px;
-  font-family: "Nunito-Bold";
+  font-family: Nunito-Bold;
 `;
 
-export const ExelenceAdviceComponent = styled.div`
-  width: 100%;
-  max-width: 49px;
-  height: 0;
-  border: solid 1px #3b3b3c;
-
-  @media (max-width: 991px) {
-    max-width: 15px;
-  }
-`;
-
-export const ExcelenceAdviceTitle = styled.p`
+export const ExcellenceAdviceTitle = styled.p`
+  position: relative;
   width: 100%;
   max-width: 263px;
   height: 36px;
-  margin: 2px 0 0 0;
-  font-family: "Nunito-bold";
+  margin: 0 0 0 29px;
+  font-family: Nunito-bold;
   font-size: 24px;
   line-height: 34px;
   text-align: left;
-  color: #14183e;
+  color: ${Theme.primary};
 
   @media (max-width: 991px) {
     font-size: 14px;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    max-width: 20px;
+    height: 0;
+    border: 1px solid ${Theme.GreyShade};
+    top: 15px;
+    left: -26px;
+
+    @media (max-width: 991px) {
+      max-width: 15px;
+    }
+  }
 `;
 
-export const ExelenceTitileBox = styled.div`
+export const ExcellenceTitleBox = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
@@ -150,8 +156,8 @@ export const ServiceBox = styled.div`
   max-width: 400px;
   height: 328px;
   border-radius: 23px;
-  border: 1px solid #cfcfcf;
-  background-color: #fff;
+  border: 1px solid ${Theme.GreyShade};
+  background-color: ${Theme.whiteBackground};
   margin: 42px 0 0 0;
 
   @media (max-width: 991px) {
@@ -163,6 +169,8 @@ export const ServiceBox = styled.div`
 
 export const ProductBox = styled.div`
   display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 `;
 
 export const ProductLeftBox = styled.div``;
@@ -181,37 +189,21 @@ export const ProductRightBox = styled.div`
   max-width: 100px;
 `;
 
-export const ProdcutDivider = styled.div`
+export const ProductDivider = styled.div`
   width: 0;
   height: 141px;
-  margin: 1px 44px 48px;
-  border: 0.5px solid #cfcfcf;
+  margin: 0 44px 48px;
+  border: 1px solid ${Theme.GreyShade};
 
   @media (max-width: 991px) {
-    margin: 0px 26px 15px;
+    margin: 0 26px 15px;
   }
 `;
 
-export const HeadingGradient = styled.div`
-  position: relative;
-  width: 100%;
-  max-width: 427px;
-  height: 68px;
-  top: -180px;
-  z-index: 0;
-  background-image: linear-gradient(to bottom, #f8e9ed, #fbfbfb);
-
-  @media (max-width: 991px) {
-    max-width: 250px;
-    top: -84px;
-    height: 44px;
-  }
-`;
-
-export const ProductDiscription = styled.div`
+export const ProductDescription = styled.div`
   width: 100%;
   max-width: 323px;
   text-align: center;
   font-size: 15px;
-  color: #707684;
+  color: ${Theme.primary};
 `;

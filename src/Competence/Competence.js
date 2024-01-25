@@ -1,74 +1,75 @@
 import {
   CompetenceButton,
   CompetenceButtonText,
-  CompetenceDisccription,
+  CompetenceDescription,
   CompetenceInnerWrapper,
   CompetenceLeftBox,
   CompetenceRightBox,
   CompetenceSection,
   CompetenceTitle,
   CompetenceWrapper,
-  ExcelenceAdviceTitle,
-  ExelenceAdviceComponent,
-  ExelenceTitileBox,
-  HeadingGradient,
+  ExcellenceAdviceTitle,
+  ExcellenceTitleBox,
   ProductBox,
-  ProductDiscription,
+  ProductDescription,
   ProductLeftBox,
   ProductLeftBoxImage,
   ProductRightBox,
   ServiceBox,
-  ProdcutDivider,
+  ProductDivider,
 } from "./Competence.styled";
-import topservice from "../asserts/rectangle-1352.png";
-import servicerating from "../asserts/rectangle-1353.png";
+import topservice from "../asserts/top-service.png";
+import servicerating from "../asserts/service-rating.png";
+import { Container } from "../App.styled";
 
 export function Competence() {
   return (
     <>
       <CompetenceSection>
-        <CompetenceWrapper>
-          <CompetenceInnerWrapper>
-            <CompetenceLeftBox>
-              <CompetenceTitle>Competence for your finances</CompetenceTitle>
-              <HeadingGradient />
-              <CompetenceDisccription>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English
-              </CompetenceDisccription>
-              <CompetenceButton>
-                <CompetenceButtonText>Contact</CompetenceButtonText>
-              </CompetenceButton>
-            </CompetenceLeftBox>
-            <CompetenceRightBox>
-              <ExelenceTitileBox>
-                <ExelenceAdviceComponent />
-                <ExcelenceAdviceTitle>EXCELLENT ADVICE</ExcelenceAdviceTitle>
-              </ExelenceTitileBox>
-              <ServiceBox>
-                <ProductBox>
-                  <ProductLeftBox>
-                    <ProductLeftBoxImage src={topservice} alt="top Service" />
-                  </ProductLeftBox>
-                  <ProdcutDivider />
-                  <ProductRightBox>
-                    <ProductLeftBoxImage
-                      src={servicerating}
-                      alt="service rating"
-                    />
-                  </ProductRightBox>
-                </ProductBox>
-                <ProductDiscription>
-                  We are regularly recognized by independent institutes for our
-                  quality in customer advice and service.
-                </ProductDiscription>
-              </ServiceBox>
-            </CompetenceRightBox>
-          </CompetenceInnerWrapper>
-        </CompetenceWrapper>
+        <Container>
+          <CompetenceWrapper>
+            <CompetenceInnerWrapper>
+              <CompetenceLeftBox>
+                <CompetenceTitle>Competence for your finances</CompetenceTitle>
+                <CompetenceDescription>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English
+                </CompetenceDescription>
+                <CompetenceButton>
+                  <CompetenceButtonText>Contact</CompetenceButtonText>
+                </CompetenceButton>
+              </CompetenceLeftBox>
+              <CompetenceRightBox>
+                <ExcellenceTitleBox>
+                  <ExcellenceAdviceTitle>
+                    EXCELLENT ADVICE
+                  </ExcellenceAdviceTitle>
+                </ExcellenceTitleBox>
+                <ServiceBox>
+                  <ProductBox>
+                    <ProductLeftBox>
+                      <ProductLeftBoxImage src={topservice} alt="top Service" />
+                    </ProductLeftBox>
+                    <ProductDivider />
+                    <ProductRightBox>
+                      <ProductLeftBoxImage
+                        src={servicerating}
+                        alt="service rating"
+                      />
+                    </ProductRightBox>
+                  </ProductBox>
+                  <ProductDescription>
+                    We are regularly recognized by independent institutes for
+                    our quality in customer advice and service.
+                  </ProductDescription>
+                </ServiceBox>
+              </CompetenceRightBox>
+            </CompetenceInnerWrapper>
+          </CompetenceWrapper>
+        </Container>
       </CompetenceSection>
     </>
   );
