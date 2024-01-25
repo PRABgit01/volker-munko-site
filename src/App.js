@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { AdvantagePage } from "./AdvantagePage/AdvantagePage";
+import "./App.css";
+import { GlobalStyles } from "./App.styled";
+import { AssetManagementHomePage } from "./AssetmanagmentHomeSection/AssetmanagmentHome";
+import { Advantagespage } from "./Cards/Card";
+import { Competence } from "./Competence/Competence";
+import { FooterPage } from "./Footer/FooterPage";
+import { AssetManagment } from "./assetmanagment/AssetManagment";
+import { Contact } from "./contact/contact";
+import { ProductAndSolution } from "./productSolution/ProdcuandSolution";
+import { WealthManagement, WealthManagment } from "./wealthmanagmnet/Wealthmanagment";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GlobalStyles />
+      <AssetManagment />
+      <AssetManagementHomePage />
+      <Competence />
+      <ProductAndSolution />
+      <WealthManagement/>
+      <Advantagespage />
+      <Contact />
+      <FooterPage />
     </div>
   );
 }
