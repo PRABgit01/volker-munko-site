@@ -47,8 +47,8 @@ export const BackCard = styled.li`
   padding: 25px 28px 42px 35px;
   border-radius: 20px;
   border: none;
-  background-color: ${Theme.BlackColor};
-  color: ${Theme.whiteBackground};
+  background-color: ${Theme.Black};
+  color: ${Theme.white};
   overflow: hidden;
   opacity: 1;
   transition: opacity 0.3s ease;
@@ -68,8 +68,8 @@ export const ProductData = styled.li`
   margin: 20px 0 38px 30px;
   padding: 25px 28px 42px 35px;
   border-radius: 20px;
-  border: 1px solid ${Theme.GreyShade} ;
-  background-color: ${Theme.whiteBackground};
+  border: 1px solid ${Theme.GreyShade};
+  background-color: ${Theme.white};
   overflow: hidden;
   transition: background-color 0.3s ease;
 
@@ -116,7 +116,7 @@ export const ServiceHeadingBox = styled.div`
 
 export const ServiceHeading = styled.h4`
   width: 100%;
-  background-color: ${Theme.whiteBackground};
+  background-color: ${Theme.white};
 `;
 
 export const ContactButtonBox = styled.div`
@@ -128,7 +128,7 @@ export const ContactButton = styled.button`
   max-width: 188px;
   height: 50px;
   background-color: ${Theme.GreyShade};
-  color: ${Theme.BlackColor};
+  color: ${Theme.Black};
   border-radius: 10px;
   border: none;
   cursor: pointer;

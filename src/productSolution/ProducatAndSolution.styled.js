@@ -63,7 +63,7 @@ export const PrivateCustomerBox = styled.div`
   max-width: 244px;
   height: 41px;
   border-radius: 36px;
-  background-color:${Theme.primary};
+  background-color: ${Theme.primary};
 
   @media (max-width: 991px) {
     height: 34px;
@@ -76,9 +76,9 @@ export const PrivateCustomerTitle = styled.div`
   justify-content: center;
   gap: 20px;
   padding: 10px 0;
-  color: ${Theme.whiteBackground};
+  color: ${Theme.white};
   margin: 0;
-  text-shadow: 4px 4px 20px ${Theme.whiteBackground};
+  text-shadow: 4px 4px 20px ${Theme.white};
 
   @media (max-width: 991px) {
     font-size: 9px;
@@ -88,13 +88,15 @@ export const PrivateCustomerTitle = styled.div`
 
 export const CorporateCustomerTitle = styled.div`
   display: flex;
+  align-items: flex-start;
+  justify-content: start;
   width: 100%;
   max-width: 493px;
   height: 41px;
   border-radius: 36px;
-  border: 1px solid ${Theme.whiteBackground};
+  border: 1px solid ${Theme.white};
   box-shadow: 0 3px 6px 0 ${Theme.primary};
-  background-color: ${Theme.whiteBackground};
+  background-color: ${Theme.white};
 
   @media (max-width: 991px) {
     max-width: 331px;
@@ -114,7 +116,7 @@ export const CorporateCustomerHeading = styled.div`
   justify-content: center;
   gap: 20px;
   padding: 9px 23px;
-  color: ${Theme.BlackColor};
+  color: ${Theme.Black};
   margin: 0;
-  text-shadow: 4px 4px 20px ${Theme.whiteBackground};
+  text-shadow: 4px 4px 20px ${Theme.white};
 `;

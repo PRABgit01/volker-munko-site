@@ -1,7 +1,7 @@
 export const Theme = {
-    primary: '#37415c',
-    backgroundColor: '#f8f8f8',
-    whiteBackground: '#fff',
-    GreyShade:"#cfcfcf",
-    BlackColor:"#000",
-  };
+  primary: "#37415c",
+  background: "#f8f8f8",
+  white: "#fff",
+  GreyShade: "#cfcfcf",
+  Black: "#000",
+};
